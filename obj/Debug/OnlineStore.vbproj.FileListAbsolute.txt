@@ -1,0 +1,126 @@
+C:\Users\Tommy\source\repos\OnlineStore\obj\Debug\OnlineStore.vbproj.AssemblyReference.cache
+C:\Users\Tommy\source\repos\OnlineStore\obj\Debug\OnlineStore.Resources.resources
+C:\Users\Tommy\source\repos\OnlineStore\obj\Debug\OnlineStore.vbproj.GenerateResource.cache
+C:\Users\Tommy\source\repos\OnlineStore\bin\OnlineStore.dll.config
+C:\Users\Tommy\source\repos\OnlineStore\bin\OnlineStore.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\OnlineStore.pdb
+C:\Users\Tommy\source\repos\OnlineStore\bin\OnlineStore.xml
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\csc.exe
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\csc.exe.config
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\csc.rsp
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\csi.exe
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\csi.exe.config
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\csi.rsp
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.AppContext.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.Console.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.IO.Compression.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.Net.Http.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.ValueTuple.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\vbc.exe
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\vbc.exe.config
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\vbc.rsp
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\VBCSCompiler.exe
+C:\Users\Tommy\source\repos\OnlineStore\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Tommy\source\repos\OnlineStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Tommy\source\repos\OnlineStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Tommy\source\repos\OnlineStore\obj\Debug\OnlineStore.vbproj.CoreCompileInputs.cache
+C:\Users\Tommy\source\repos\OnlineStore\obj\Debug\OnlineStore.vbproj.CopyComplete
+C:\Users\Tommy\source\repos\OnlineStore\obj\Debug\OnlineStore.dll
+C:\Users\Tommy\source\repos\OnlineStore\obj\Debug\OnlineStore.xml
+C:\Users\Tommy\source\repos\OnlineStore\obj\Debug\OnlineStore.pdb
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\OnlineStore.dll.config
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\OnlineStore.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\OnlineStore.pdb
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\OnlineStore.xml
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\csc.exe
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\csc.exe.config
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\csc.rsp
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\csi.exe
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\csi.exe.config
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\csi.rsp
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\Microsoft.CSharp.Core.targets
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\Microsoft.Managed.Core.targets
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\Microsoft.Win32.Primitives.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.AppContext.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.Collections.Immutable.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.Console.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.Diagnostics.StackTrace.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.Globalization.Calendars.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.IO.Compression.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.IO.Compression.ZipFile.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.IO.FileSystem.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.IO.FileSystem.Primitives.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.Net.Http.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.Net.Sockets.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.Reflection.Metadata.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.Security.Cryptography.Encoding.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.Security.Cryptography.Primitives.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.Text.Encoding.CodePages.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.Threading.Tasks.Extensions.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.ValueTuple.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.Xml.ReaderWriter.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.Xml.XmlDocument.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.Xml.XPath.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\System.Xml.XPath.XDocument.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\vbc.exe
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\vbc.exe.config
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\vbc.rsp
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\VBCSCompiler.exe
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\roslyn\VBCSCompiler.exe.config
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\obj\Debug\OnlineStore.vbproj.AssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\obj\Debug\OnlineStore.Resources.resources
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\obj\Debug\OnlineStore.vbproj.GenerateResource.cache
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\obj\Debug\OnlineStore.vbproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\obj\Debug\OnlineStore.vbproj.CopyComplete
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\obj\Debug\OnlineStore.dll
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\obj\Debug\OnlineStore.xml
+\\vmware-host\Shared Folders\Desktop\CLONED_OnlineStore\obj\Debug\OnlineStore.pdb
