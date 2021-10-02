@@ -90,10 +90,14 @@
                                                         </a>
                                                         <ul class="dropdown-menu">
                                                             <li><a class="dropdown-item" href="shop-login.html">Login</a></li>
-                                                            <li><a class="dropdown-item" href="shop-products.html">Products</a></li>
                                                             <li><a class="dropdown-item" href="shop-cart.html">Cart</a></li>
-                                                            <li><a class="dropdown-item" href="shop-checkout.html">Checkout</a></li>
-                                                            <li><a class="dropdown-item" href="shop-order-complete.html">Order Complete</a></li>
+                                                            <!-- .NET to Repeat Products -->
+                                                            <asp:SqlDataSource ID="sqlDSMainCategory" runat="server" ConnectionString='<%$ ConnectionStrings:ConnectionStringOnlineStore %>' SelectCommand="SELECT * FROM [Category] WHERE Parent = 0"></asp:SqlDataSource>
+                                                            <asp:Repeater ID="rpMainCategory" runat="server" DataSourceID="sqlDSMainCategory">
+                                                                <ItemTemplate>
+                                                                    <li><a class="dropdown-item" href="Category.aspx?MainCategoryID=<%# CStr(Eval("CategoryID")) %>&MainCategoryName=<%# Trim(Eval("CategoryName")) %>"><%# Eval("CategoryName") %></a></li>
+                                                                </ItemTemplate>
+                                                            </asp:Repeater>
                                                         </ul>
                                                     </li>
 

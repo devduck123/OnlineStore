@@ -50,6 +50,24 @@ Partial Public Class Template
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
+    '''sqlDSMainCategory control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents sqlDSMainCategory As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''rpMainCategory control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents rpMainCategory As Global.System.Web.UI.WebControls.Repeater
+
+    '''<summary>
     '''ContentPlaceHolder1 control.
     '''</summary>
     '''<remarks>

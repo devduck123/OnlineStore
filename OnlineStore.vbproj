@@ -132,6 +132,11 @@
     <Content Include="ajax\portfolio-ajax-project-7.html" />
     <Content Include="ajax\portfolio-ajax-project.html" />
     <Content Include="ajax\shop-product-quick-view.html" />
+    <Content Include="App_Data\OnlineStore.mdf" />
+    <Content Include="App_Data\OnlineStore_log.ldf">
+      <DependentUpon>OnlineStore.mdf</DependentUpon>
+    </Content>
+    <Content Include="Category.aspx" />
     <Content Include="contact-us.html" />
     <Content Include="css\custom.css" />
     <Content Include="css\demos\demo-architecture-2.css" />
@@ -2395,6 +2400,7 @@
     <Content Include="shop-product-sidebar-left.html" />
     <Content Include="shop-product-sidebar-right.html" />
     <Content Include="shop-products.html" />
+    <Content Include="Temp.aspx" />
     <Content Include="vendor\360-degrees-product-viewer\css\reset.css" />
     <Content Include="vendor\360-degrees-product-viewer\css\style.css" />
     <Content Include="vendor\360-degrees-product-viewer\img\cd-arrows.svg" />
@@ -5489,6 +5495,13 @@
     <Content Include="Default.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Category.aspx.designer.vb">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Category.aspx.vb">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -5510,6 +5523,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Temp.aspx.designer.vb">
+      <DependentUpon>Temp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Temp.aspx.vb">
+      <DependentUpon>Temp.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Template.Master.designer.vb">
       <DependentUpon>Template.Master</DependentUpon>
@@ -5992,7 +6012,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

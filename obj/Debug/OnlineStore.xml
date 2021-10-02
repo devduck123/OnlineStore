@@ -37,6 +37,24 @@ OnlineStore
  Returns the Asp log object.
  </summary>
 </member>
+<member name="F:OnlineStore.temp._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OnlineStore.temp._SqlDataSource1">
+<summary>
+SqlDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:OnlineStore.Template._googleFonts">
 <summary>
 googleFonts control.
@@ -67,6 +85,24 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:OnlineStore.Template._form1">
 <summary>
 form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OnlineStore.Template._sqlDSMainCategory">
+<summary>
+sqlDSMainCategory control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OnlineStore.Template._rpMainCategory">
+<summary>
+rpMainCategory control.
 </summary>
 <remarks>
 Auto-generated field.
