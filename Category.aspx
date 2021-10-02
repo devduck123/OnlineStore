@@ -2,7 +2,10 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server"></asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1>Products</h1>
+    <!-- EASTER EGG -->
+    <div>
+        <h1><span class="blockquote-primary">Products</span></h1>
+    </div>
     <div role="main" class="main shop pt-4">
         <div class="container">
             <div class="row">
