@@ -29,7 +29,8 @@
                             class="row products product-thumb-info-list"
                             data-plugin-masonry
                             data-plugin-options="{'layoutMode': 'fitRows'}">
-
+                            
+                            <!-- ===== PRODUCT ===== -->
                             <div class="col-sm-6 col-lg-4">
                                 <div class="product mb-0">
                                     <div class="product-thumb-info border-0 mb-3">
@@ -42,7 +43,7 @@
                                             </a>
                                         </div>
 
-                                        <a href="shop-product-sidebar-left.html">
+                                        <a href="ProductDetail.aspx?ProductID=<%# Eval("ProductID") %>">
                                             <div class="product-thumb-info-image">
                                                 <img
                                                     alt=""
@@ -54,7 +55,7 @@
                                     <div class="d-flex justify-content-between">
                                         <div>
                                             <a
-                                                href="#"
+                                                href="Category.aspx?MainCategoryID=<%# CStr(Eval("CategoryID")) %>&MainCategoryName=<%# Trim(Eval("CategoryName")) %>"
                                                 class="
                               d-block
                               text-uppercase
@@ -64,7 +65,7 @@
                               line-height-1
                               text-0
                               mb-1
-                            ">accessories</a>
+                            ">(MainCategory)</a>
                                             <h3
                                                 class="
                               text-3-5
@@ -73,9 +74,10 @@
                               line-height-3
                               mb-0
                             ">
+                                                <!-- PRODUCT TITLE -->
                                                 <a
-                                                    href="shop-product-sidebar-right.html"
-                                                    class="text-color-dark text-color-hover-primary">Luxury Bag</a>
+                                                    href="ProductDetail.aspx?ProductID=<%# Eval("ProductID") %>"
+                                                    class="text-color-dark text-color-hover-primary"><%# Eval("ProductName") %></a>
                                             </h3>
                                         </div>
                                         <a
@@ -103,6 +105,7 @@
                                 </div>
                             </div>
 
+                            <!-- ===== PRODUCT ===== -->
                             <div class="col-sm-6 col-lg-4">
                                 <div class="product mb-0">
                                     <div class="product-thumb-info border-0 mb-3">
@@ -177,6 +180,7 @@
                             </div>
 
                         </div>
+                        <!-- ===== PAGINATION ===== -->
                         <div class="row mt-4">
                             <div class="col">
                                 <ul class="pagination float-end">
