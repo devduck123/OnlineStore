@@ -2,10 +2,24 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server"></asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <!-- EASTER EGG -->
+    <!-- Products breadcrumb nav (MainCategory and SubCategory) -->
     <div>
-        <h1><span class="blockquote-primary">Products</span></h1>
+        <h2><asp:Label ID="lblMainCategoryName" runat="server" Text=""></asp:Label></h2>
+        <div>
+            <asp:SqlDataSource ID="sqlDSSubCategory" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringOnlineStore %>" SelectCommand=""></asp:SqlDataSource>
+            <asp:Repeater ID="rpSubCategory" runat="server" DataSourceID="sqlDSSubCategory">
+                <ItemTemplate>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><a href="Category.aspx?MainCategoryID=<%# Request.QueryString("MainCategoryID") %>&MainCategoryName=<%# Request.QueryString("MainCategoryName") %>&SubCategoryID=<%# CStr(Eval("CategoryID")) %>&SubCategoryName=<%# CStr(Eval("CategoryName")) %>"><%# Eval("CategoryName") %></a></h3>
+                        </div>
+                    </div>
+                </ItemTemplate>
+            </asp:Repeater>
+        </div>
     </div>
+
+    <!-- Products -->
     <div role="main" class="main shop pt-4">
         <div class="container">
             <div class="row">
