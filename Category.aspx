@@ -4,7 +4,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!-- Products breadcrumb nav (MainCategory and SubCategory) -->
     <div>
-        <h2><asp:Label ID="lblMainCategoryName" runat="server" Text=""></asp:Label></h2>
+        <h2>
+            <asp:Label ID="lblMainCategoryName" runat="server" Text=""></asp:Label></h2>
         <div>
             <asp:SqlDataSource ID="sqlDSSubCategory" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringOnlineStore %>" SelectCommand=""></asp:SqlDataSource>
             <asp:Repeater ID="rpSubCategory" runat="server" DataSourceID="sqlDSSubCategory">
@@ -29,83 +30,77 @@
                             class="row products product-thumb-info-list"
                             data-plugin-masonry
                             data-plugin-options="{'layoutMode': 'fitRows'}">
-                            
-                            <!-- ===== PRODUCT ===== -->
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="product mb-0">
-                                    <div class="product-thumb-info border-0 mb-3">
-                                        <div class="addtocart-btn-wrapper">
-                                            <a
-                                                href="shop-cart.html"
-                                                class="text-decoration-none addtocart-btn"
-                                                title="Add to Cart">
-                                                <i class="icons icon-bag"></i>
-                                            </a>
-                                        </div>
 
-                                        <a href="ProductDetail.aspx?ProductID=<%# Eval("ProductID") %>">
-                                            <div class="product-thumb-info-image">
-                                                <img
-                                                    alt=""
-                                                    class="img-fluid"
-                                                    src="img/products/product-grey-4.jpg" />
+                            <h2><asp:Label ID="lblProductListType" runat="server" Text=""></asp:Label></h2>
+                            <asp:SqlDataSource ID="sqlDSProductList" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringOnlineStore %>" SelectCommand=""></asp:SqlDataSource>
+                            <asp:Repeater ID="rpProductList" runat="server" DataSourceID="sqlDSProductList">
+                                <ItemTemplate>
+                                    <!-- ===== PRODUCT ===== -->
+                                    <div class="col-sm-6 col-lg-4">
+                                        <div class="product mb-0">
+                                            <div class="product-thumb-info border-0 mb-3">
+                                                <div class="addtocart-btn-wrapper">
+                                                    <a
+                                                        href="shop-cart.html"
+                                                        class="text-decoration-none addtocart-btn"
+                                                        title="Add to Cart">
+                                                        <i class="icons icon-bag"></i>
+                                                    </a>
+                                                </div>
+
+                                                <a href="ProductDetail.aspx?ProductID=<%# Eval("ProductID") %>">
+                                                    <div class="product-thumb-info-image">
+                                                        <img
+                                                            alt=""
+                                                            class="img-fluid"
+                                                            src="img/products/product-grey-4.jpg" />
+                                                    </div>
+                                                </a>
                                             </div>
-                                        </a>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <a
-                                                href="Category.aspx?MainCategoryID=<%# CStr(Eval("CategoryID")) %>&MainCategoryName=<%# Trim(Eval("CategoryName")) %>"
-                                                class="
-                              d-block
-                              text-uppercase
-                              text-decoration-none
-                              text-color-default
-                              text-color-hover-primary
-                              line-height-1
-                              text-0
-                              mb-1
-                            ">(MainCategory)</a>
-                                            <h3
-                                                class="
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <h3
+                                                        class="
                               text-3-5
                               font-weight-medium font-alternative
                               text-transform-none
                               line-height-3
                               mb-0
                             ">
-                                                <!-- PRODUCT TITLE -->
+                                                        <!-- PRODUCT TITLE -->
+                                                        <a
+                                                            href="ProductDetail.aspx?ProductID=<%# Eval("ProductID") %>"
+                                                            class="text-color-dark text-color-hover-primary"><%# Eval("ProductName") %></a>
+                                                    </h3>
+                                                </div>
                                                 <a
-                                                    href="ProductDetail.aspx?ProductID=<%# Eval("ProductID") %>"
-                                                    class="text-color-dark text-color-hover-primary"><%# Eval("ProductName") %></a>
-                                            </h3>
-                                        </div>
-                                        <a
-                                            href="#"
-                                            class="
+                                                    href="#"
+                                                    class="
                             text-decoration-none
                             text-color-default
                             text-color-hover-dark
                             text-4
                           "><i class="far fa-heart"></i></a>
+                                            </div>
+                                            <div title="Rated 5 out of 5">
+                                                <input
+                                                    type="text"
+                                                    class="d-none"
+                                                    value="5"
+                                                    title=""
+                                                    data-plugin-star-rating
+                                                    data-plugin-options="{'displayOnly': true, 'color': 'default', 'size':'xs'}" />
+                                            </div>
+                                            <p class="price text-5 mb-3">
+                                                <span class="amount text-color-dark font-weight-semi-bold">$ <%# Eval("ProductPrice") %></span>
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div title="Rated 5 out of 5">
-                                        <input
-                                            type="text"
-                                            class="d-none"
-                                            value="5"
-                                            title=""
-                                            data-plugin-star-rating
-                                            data-plugin-options="{'displayOnly': true, 'color': 'default', 'size':'xs'}" />
-                                    </div>
-                                    <p class="price text-5 mb-3">
-                                        <span class="sale text-color-dark font-weight-semi-bold">$99,00</span>
-                                        <span class="amount">$79,00</span>
-                                    </p>
-                                </div>
-                            </div>
+                                </ItemTemplate>
+                            </asp:Repeater>
 
-                            <!-- ===== PRODUCT ===== -->
+
+                            <!-- ===== PRODUCT (DELETE LATER) ===== -->
                             <div class="col-sm-6 col-lg-4">
                                 <div class="product mb-0">
                                     <div class="product-thumb-info border-0 mb-3">

@@ -39,4 +39,31 @@ Partial Public Class Category
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents rpSubCategory As Global.System.Web.UI.WebControls.Repeater
+
+    '''<summary>
+    '''lblProductListType control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblProductListType As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''sqlDSProductList control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents sqlDSProductList As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''rpProductList control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents rpProductList As Global.System.Web.UI.WebControls.Repeater
 End Class
