@@ -21,8 +21,7 @@
                         </div>
                         
                         <div class="col-lg-6">
-                            <h1 class="mb-0 font-weight-bold text-7">Porto Headphone
-                            </h1>
+                            <h1 class="mb-0 font-weight-bold text-7">Porto Headphone</h1>
 
                             <div class="pb-0 clearfix d-flex align-items-center">
                                 <div title="Rated 3 out of 5" class="float-start">
