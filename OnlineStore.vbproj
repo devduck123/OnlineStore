@@ -2393,6 +2393,7 @@
     <Content Include="php\tweet-php\lib\twitter-text-php\tests\Twitter\HitHighlighterTest.php" />
     <Content Include="php\tweet-php\TweetPHP.php" />
     <Content Include="php\twitter-feed.php" />
+    <Content Include="ProductDetail.aspx" />
     <Content Include="shop-cart.html" />
     <Content Include="shop-checkout.html" />
     <Content Include="shop-login.html" />
@@ -5523,6 +5524,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ProductDetail.aspx.designer.vb">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDetail.aspx.vb">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Temp.aspx.designer.vb">
       <DependentUpon>Temp.aspx</DependentUpon>
