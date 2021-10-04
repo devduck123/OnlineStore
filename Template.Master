@@ -101,7 +101,7 @@
                                                         </ul>
                                                     </li>
 
-                                                    <!-- PRODUCT dropdown (does NOT link anywhere) -->
+                                                    <!-- PRODUCT dropdownlist (does NOT link anywhere) -->
                                                     <li class="dropdown" style="margin-top:10%;">
                                                         <asp:DropDownList class="dropdown-item" ID="ddlMainCategory" runat="server" DataSourceID="sqlDSMainCategory" DataValueField="CategoryName"></asp:DropDownList>
                                                     </li>
