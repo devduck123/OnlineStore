@@ -4,8 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!-- Products breadcrumb nav (MainCategory and SubCategory) -->
     <div>
-        <h2>
-            <asp:Label ID="lblMainCategoryName" runat="server" Text=""></asp:Label></h2>
+        <h2><asp:Label ID="lblMainCategoryName" runat="server" Text=""></asp:Label></h2>
         <div>
             <asp:SqlDataSource ID="sqlDSSubCategory" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringOnlineStore %>" SelectCommand=""></asp:SqlDataSource>
             <asp:Repeater ID="rpSubCategory" runat="server" DataSourceID="sqlDSSubCategory">

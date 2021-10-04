@@ -163,6 +163,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:OnlineStore.Template._ddlMainCategory">
+<summary>
+ddlMainCategory control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:OnlineStore.Template._ContentPlaceHolder1">
 <summary>
 ContentPlaceHolder1 control.
