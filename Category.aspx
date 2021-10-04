@@ -47,6 +47,7 @@
                                                     </a>
                                                 </div>
 
+                                                <!-- PRODUCT IMAGE -->
                                                 <a href="ProductDetail.aspx?ProductID=<%# Eval("ProductID") %>">
                                                     <div class="product-thumb-info-image">
                                                         <img
@@ -90,6 +91,7 @@
                                                     data-plugin-star-rating
                                                     data-plugin-options="{'displayOnly': true, 'color': 'default', 'size':'xs'}" />
                                             </div>
+                                            <!-- PRODUCT PRICE -->
                                             <p class="price text-5 mb-3">
                                                 <span class="amount text-color-dark font-weight-semi-bold">$ <%# Eval("ProductPrice") %></span>
                                             </p>
