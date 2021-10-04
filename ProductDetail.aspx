@@ -273,18 +273,6 @@
                                 <li class="nav-item">
                                     <a
                                         class="
-                            nav-link
-                            font-weight-bold
-                            text-3 text-uppercase
-                            py-2
-                            px-3
-                          "
-                                        href="#productInfo"
-                                        data-bs-toggle="tab">Additional Information</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a
-                                        class="
                             nav-link nav-link-reviews
                             font-weight-bold
                             text-3 text-uppercase
@@ -317,24 +305,6 @@
                           primis in faucibus orci luctus et ultrices posuere
                           cubilia Curae;
                                     </p>
-                                </div>
-                                <div class="tab-pane px-0 py-3" id="productInfo">
-                                    <table class="table table-striped m-0">
-                                        <tbody>
-                                            <tr>
-                                                <th class="border-top-0">Size:</th>
-                                                <td class="border-top-0">Unique</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Colors</th>
-                                                <td>Red, Blue</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Material</th>
-                                                <td>100% Leather</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
                                 </div>
                                 <div class="tab-pane px-0 py-3" id="productReviews">
                                     <ul class="comments">
@@ -542,7 +512,7 @@
 
                 <hr class="solid my-5" />
 
-                <h4 class="mb-3">Related <strong>Products</strong></h4>
+                <h4 class="mb-3"><strong>Related Products</strong></h4>
                 <div class="products row">
                     <div class="col">
                         <div
@@ -568,6 +538,7 @@
                                         </div>
                                     </a>
                                 </div>
+                                <!-- REPLACE THIS WITH .NET FORLOOP TO DISPLAY N STARS -->
                                 <div title="Rated 5 out of 5">
                                     <input
                                         type="text"
