@@ -21,7 +21,7 @@
                         </div>
                         
                         <div class="col-lg-6">
-                            <h1 class="mb-0 font-weight-bold text-7">Porto Headphone</h1>
+                            <h1 class="mb-0 font-weight-bold text-7"><asp:Label runat="server" Text="" ID="lblProductName"></asp:Label></h1>
 
                             <div class="pb-0 clearfix d-flex align-items-center">
                                 <div title="Rated 3 out of 5" class="float-start">
@@ -55,7 +55,7 @@
                             </div>
 
                             <p class="price mb-3">
-                                <span class="amount text-color-dark">$15.00</span>
+                                <span class="amount text-color-dark">$<asp:Label runat="server" Text="" ID="lblProductPrice"></asp:Label></span>
                             </p>
 
                             <p class="text-3-5 mb-3">
@@ -65,10 +65,10 @@
                             </p>
 
                             <ul class="list list-unstyled text-2">
+                                <li class="mb-0">Product Number: <strong class="text-color-dark"><asp:Label runat="server" Text="" ID="lblProductNo"></asp:Label></strong>
+                                </li>
                                 <li class="mb-0">AVAILABILITY:
                         <strong class="text-color-dark">AVAILABLE</strong>
-                                </li>
-                                <li class="mb-0">SKU: <strong class="text-color-dark">1234567890</strong>
                                 </li>
                             </ul>
 
