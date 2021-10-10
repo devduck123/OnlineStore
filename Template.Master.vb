@@ -57,6 +57,7 @@ Public Class Template
             'if DIRECT match is found, then redirect user to corresponding ProductDetail page
             'else redirect user to Category.aspx
 
+            'REDIRECTS USER TO ProductDetail.aspx FOR A PRODUCT IF USER INPUTS EXACT ProductNo
             Dim strRedirect As String
             While drProduct.Read()
                 Dim currProductNo = Trim(CStr(drProduct.Item("ProductNo")))
@@ -69,6 +70,7 @@ Public Class Template
             End While
             strRedirect = "Category.aspx"
             Response.Redirect(strRedirect)
+
 
             '    SQL statement: Select * from Product Where ProductNo = ...
             '    If yes, redirect to ProductDetail.aspx

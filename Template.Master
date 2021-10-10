@@ -78,7 +78,7 @@
 
                                                     <!-- Home -->
                                                     <li class="dropdown">
-                                                        <a class="dropdown-item" href="#">
+                                                        <a class="dropdown-item" href="Category.aspx">
                                                             Home
                                                         </a>
                                                     </li>
