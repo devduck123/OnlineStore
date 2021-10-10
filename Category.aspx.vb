@@ -9,6 +9,11 @@
             sqlDSProductList.SelectCommand = "SELECT * FROM [Product] WHERE MainCategoryID = " & CInt(Request.QueryString("MainCategoryID")) & " AND ProductFeatured = 'Y'"
             'DEBUGGING? Response.Write(sqlDSProductList.SelectCommand)
         End If
+
+        If Request.QueryString("SubCategoryID") <> "" Then
+            lblProductListType.Text = "All Products for " + Request.QueryString("SubCategoryName")
+            sqlDSProductList.SelectCommand = "SELECT * FROM [Product] WHERE SubCategoryID = " & CInt(Request.QueryString("SubCategoryID"))
+        End If
     End Sub
 
 End Class

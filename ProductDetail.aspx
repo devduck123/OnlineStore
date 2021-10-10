@@ -32,6 +32,8 @@
                                         title=""
                                         data-plugin-star-rating
                                         data-plugin-options="{'displayOnly': true, 'color': 'primary', 'size':'xs'}" />
+                                    
+                                    <asp:Image ID="star" runat="server" ImageUrl="img/icons/star.png" />
                                 </div>
 
                                 <div class="review-num">

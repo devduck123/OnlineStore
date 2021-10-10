@@ -23,6 +23,15 @@ Partial Public Class ProductDetail
     Protected WithEvents lblProductName As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''star control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents star As Global.System.Web.UI.WebControls.Image
+
+    '''<summary>
     '''lblProductPrice control.
     '''</summary>
     '''<remarks>
