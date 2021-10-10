@@ -42,13 +42,33 @@ Public Class Template
             connProduct.Open()
             drProduct = cmdProduct.ExecuteReader(CommandBehavior.CloseConnection)
 
-            If drProduct.Read() Then
-                Response.Write("ProductID: " + CStr(drProduct.Item("ProductID")) + "<br/>")
-                Response.Write("ProductName: " + CStr(drProduct.Item("ProductName")) + "<br/>")
-                Response.Write("ProductNo: " + CStr(drProduct.Item("ProductNo")) + "<br/>")
+            'loop through all Product elements
+            'While drProduct.Read()
+            '    Response.Write("ProductID: " + CStr(drProduct.Item("ProductID")) + "<br/>")
+            '    Response.Write("ProductName: " + CStr(drProduct.Item("ProductName")) + "<br/>")
+            '    Response.Write("ProductNo: " + CStr(drProduct.Item("ProductNo")) + "<br/>")
+            'End While
 
-            End If
+            'Dim strRedirect As String
+            'strRedirect = "ProductDetail.aspx?ProductID=" + strSearchString
+            'Response.Redirect(strRedirect)
 
+            'compare user search string to every ProductNo in the Product table
+            'if DIRECT match is found, then redirect user to corresponding ProductDetail page
+            'else redirect user to Category.aspx
+
+            Dim strRedirect As String
+            While drProduct.Read()
+                Dim currProductNo = Trim(CStr(drProduct.Item("ProductNo")))
+
+                If strSearchString.Equals(currProductNo) Then
+                    strRedirect = "ProductDetail.aspx?ProductID=" + CStr(drProduct.Item("ProductID"))
+                    Response.Redirect(strRedirect)
+                End If
+
+            End While
+            strRedirect = "Category.aspx"
+            Response.Redirect(strRedirect)
 
             '    SQL statement: Select * from Product Where ProductNo = ...
             '    If yes, redirect to ProductDetail.aspx
