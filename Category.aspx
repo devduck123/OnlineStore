@@ -53,7 +53,9 @@
                                                         <img
                                                             alt=""
                                                             class="img-fluid"
-                                                            src="img/products/product-grey-4.jpg" />
+                                                            src="img/<%# Eval("ProductID") %>.jpg"
+                                                            
+                                                            />
                                                     </div>
                                                 </a>
                                             </div>
