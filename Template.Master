@@ -101,7 +101,7 @@
                                                         </ul>
                                                     </li>
 
-                                                    <!-- Shop #2 -->
+                                                    <!-- Shop #2 (DOES NOT LINK ANYWHERE YET) -->
                                                     <li class="dropdown">
                                                         <a class="dropdown-item dropdown-toggle" href="#">
                                                             Shop #2
@@ -112,8 +112,6 @@
                                                             <asp:Label ID="lblMainCategory" runat="server" Text=""></asp:Label>
                                                         </ul>
                                                     </li>
-
-
 
                                                     <!-- PRODUCT dropdownlist (does NOT link anywhere) -->
                                                     <li class="dropdown">
@@ -140,16 +138,16 @@
                                             <a href="#" class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch"><i class="fas fa-search header-nav-top-icon"></i></a>
                                             <div class="header-nav-features-dropdown" id="headerTopSearchDropdown">
                                                 <!-- GET RID OF THIS FORM, WE'LL PROGRAM OUR OWN -->
-                                                <form role="search" action="page-search-results.html" method="get">
+                                    <%--            <form role="search" action="page-search-results.html" method="get">
                                                     <div class="simple-search input-group">
                                                         <input class="form-control text-1" id="headerSearch" name="q" type="search" value="" placeholder="Search...">
                                                         <button class="btn" type="submit">
                                                             <i class="fas fa-search header-nav-top-icon"></i>
                                                         </button>
                                                     </div>
-                                                </form>
+                                                </form>--%>
 
-                                                <div>
+                                                <div class="simple-search input-group">
                                                     <asp:TextBox ID="tbSearchString" runat="server"></asp:TextBox>
                                                     <asp:Button ID="btnSearch" runat="server" Text="Go" />
                                                 </div>
@@ -306,7 +304,7 @@
                                 <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
                             </ul>
                         </div>
-                        <div class="col-lg-5 pt-3">
+                        <%--<div class="col-lg-5 pt-3">
                             <h5 class="text-3 mb-3 pb-1">SEND US A MESSAGE</h5>
                             <form class="contact-form form-errors-light" action="php/contact-form.php" method="POST">
                                 <input type="hidden" value="Contact Form" name="subject" id="subject">
@@ -337,7 +335,7 @@
                                     </div>
                                 </div>
                             </form>
-                        </div>
+                        </div>--%>
                     </div>
                 </div>
                 <div class="footer-copyright">

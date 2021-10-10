@@ -7,7 +7,7 @@ Public Class Template
         Dim connMainCategory As SqlConnection
         Dim cmdMainCategory As SqlCommand
         Dim drMainCategory As SqlDataReader
-        Dim strSQL As String = "Select * from Category Where Parent = 0"
+        Dim strSQL As String = "SELECT * FROM [Category] WHERE Parent = 0"
         connMainCategory = New SqlConnection(strConn)
         cmdMainCategory = New SqlCommand(strSQL, connMainCategory)
         connMainCategory.Open()
@@ -22,12 +22,34 @@ Public Class Template
     Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
         Dim strSearchString As String
         If tbSearchString.Text <> "" Then
+            ' Response.Write("tbSearchString ACCESSED")
+
             ' We need to figure out if the searchstring is one word.
             '     Use an ASP.net function that check if the string has a space (trim the searchstring)
+
             strSearchString = Trim(tbSearchString.Text)
+
+            ' Response.Write("tbSearchString: " + strSearchString) '
 
             ' If it is one word, search for productNo in the Product table
             '    write all the database code with database connectionstring and the three objects
+            Dim connProduct As SqlConnection
+            Dim cmdProduct As SqlCommand
+            Dim drProduct As SqlDataReader
+            Dim strSQL As String = "SELECT * FROM [Product]"
+            connProduct = New SqlConnection(strConn)
+            cmdProduct = New SqlCommand(strSQL, connProduct)
+            connProduct.Open()
+            drProduct = cmdProduct.ExecuteReader(CommandBehavior.CloseConnection)
+
+            If drProduct.Read() Then
+                Response.Write("ProductID: " + CStr(drProduct.Item("ProductID")) + "<br/>")
+                Response.Write("ProductName: " + CStr(drProduct.Item("ProductName")) + "<br/>")
+                Response.Write("ProductNo: " + CStr(drProduct.Item("ProductNo")) + "<br/>")
+
+            End If
+
+
             '    SQL statement: Select * from Product Where ProductNo = ...
             '    If yes, redirect to ProductDetail.aspx
             '       Get the ProductID from the datareader above
