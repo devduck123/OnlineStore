@@ -68,6 +68,15 @@ Partial Public Class Template
     Protected WithEvents rpMainCategory As Global.System.Web.UI.WebControls.Repeater
 
     '''<summary>
+    '''lblMainCategory control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblMainCategory As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''ddlMainCategory control.
     '''</summary>
     '''<remarks>
@@ -75,6 +84,24 @@ Partial Public Class Template
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlMainCategory As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''tbSearchString control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents tbSearchString As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''btnSearch control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnSearch As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''ContentPlaceHolder1 control.

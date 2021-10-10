@@ -25,9 +25,9 @@ Public Class ProductDetail
             End If
         End If
 
-        For i As Integer = 0 To 10
-            ' TODO: retrieve N, so that we know how many times to display a star
-        Next
+        '        For i As Integer = 0 To 10
+        '           TODO:       retrieve N, so that we know how many times to display a star
+        '        Next
     End Sub
 
 End Class
