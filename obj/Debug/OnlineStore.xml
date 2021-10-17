@@ -181,6 +181,24 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:OnlineStore.Template._hlLogin">
+<summary>
+hlLogin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OnlineStore.Template._hlLogout">
+<summary>
+hlLogout control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:OnlineStore.Template._sqlDSMainCategory">
 <summary>
 sqlDSMainCategory control.

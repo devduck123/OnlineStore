@@ -89,7 +89,9 @@
                                                             Shop
                                                         </a>
                                                         <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item" href="shop-login.html">Login</a></li>
+                                                            <li><asp:HyperLink ID="hlLogin" runat="server" NavigateUrl="Login.aspx" CssClass="dropdown-item">Login</asp:HyperLink></li>
+                                                            <li><asp:HyperLink ID="hlLogout" runat="server" NavigateUrl="Logout.aspx" CssClass="dropdown-item" Visible="false">Logout</asp:HyperLink></li>
+                                                            <%--<li><a class="dropdown-item" href="shop-login.html">Login</a></li>--%>
                                                             <li><a class="dropdown-item" href="shop-cart.html">Cart</a></li>
                                                             <!-- .NET to Repeat Products -->
                                                             <asp:SqlDataSource ID="sqlDSMainCategory" runat="server" ConnectionString='<%$ ConnectionStrings:ConnectionStringOnlineStore %>' SelectCommand="SELECT * FROM [Category] WHERE Parent = 0"></asp:SqlDataSource>
