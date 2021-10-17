@@ -4,6 +4,13 @@ Public Class Template
     Inherits System.Web.UI.MasterPage
     Public strConn As String = System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionStringOnlineStore").ConnectionString
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        If Session("Email") <> "" Then
+            hlLogin.Visible = False
+            hlLogout.Visible = True
+            hrefCustomer.Visible = True
+            hrefCustomer.InnerText = Session("Email")
+        End If
+
         Dim connMainCategory As SqlConnection
         Dim cmdMainCategory As SqlCommand
         Dim drMainCategory As SqlDataReader
