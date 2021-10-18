@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Template.Master" CodeBehind="Login.aspx.vb" Inherits="OnlineStore.WebForm1" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Template.Master" CodeBehind="Login.aspx.vb" Inherits="OnlineStore.Login" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -24,9 +24,9 @@
 
 
 
-                <!-- REGISTER -->
+                <!-- TODO: REGISTER -->
                 <div class="col-md-6 col-lg-5" style="display:flex;">
-                    <div style="margin-right:50%;"><h2>OR</h2></div>
+                    <div style="margin-right:60%;"><h2 class="font-weight-bold text-5 mb-0" style="color:#FE423D;">OR</h2></div>
                     <div class="form-group col">
                         <h2 class="font-weight-bold text-5 mb-0">Register</h2>
                         <span class="form-label text-color-dark text-3">Email:</span><br />

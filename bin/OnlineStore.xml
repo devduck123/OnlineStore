@@ -271,7 +271,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:OnlineStore.WebForm1._tbEmail">
+<member name="F:OnlineStore.Login._tbEmail">
 <summary>
 tbEmail control.
 </summary>
@@ -280,7 +280,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:OnlineStore.WebForm1._tbPassword">
+<member name="F:OnlineStore.Login._tbPassword">
 <summary>
 tbPassword control.
 </summary>
@@ -289,7 +289,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:OnlineStore.WebForm1._btnLogin">
+<member name="F:OnlineStore.Login._btnLogin">
 <summary>
 btnLogin control.
 </summary>
@@ -298,7 +298,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:OnlineStore.WebForm1._lblMessage">
+<member name="F:OnlineStore.Login._lblMessage">
 <summary>
 lblMessage control.
 </summary>
@@ -307,7 +307,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:OnlineStore.WebForm1._TextBox1">
+<member name="F:OnlineStore.Login._TextBox1">
 <summary>
 TextBox1 control.
 </summary>
@@ -316,7 +316,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:OnlineStore.WebForm1._TextBox2">
+<member name="F:OnlineStore.Login._TextBox2">
 <summary>
 TextBox2 control.
 </summary>
@@ -325,7 +325,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:OnlineStore.WebForm1._Button1">
+<member name="F:OnlineStore.Login._Button1">
 <summary>
 Button1 control.
 </summary>
@@ -334,7 +334,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:OnlineStore.WebForm1._Label1">
+<member name="F:OnlineStore.Login._Label1">
 <summary>
 Label1 control.
 </summary>
