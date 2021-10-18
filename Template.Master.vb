@@ -34,51 +34,58 @@ Public Class Template
             ' We need to figure out if the searchstring is one word.
             '     Use an ASP.net function that check if the string has a space (trim the searchstring)
 
-            strSearchString = Trim(tbSearchString.Text)
+            strSearchString = Trim(tbSearchString.Text.ToUpper())
 
-            ' Response.Write("tbSearchString: " + strSearchString) '
+            Response.Write("tbSearchString: " + strSearchString + "<br/>")
 
             ' If it is one word, search for productNo in the Product table
             '    write all the database code with database connectionstring and the three objects
             Dim connProduct As SqlConnection
             Dim cmdProduct As SqlCommand
             Dim drProduct As SqlDataReader
-            Dim strSQL As String = "SELECT * FROM [Product]"
+            'Dim strSQL As String = "SELECT * FROM [Product]"
+            Dim strSQL As String = "SELECT * FROM [Product] WHERE ProductNo LIKE '" & strSearchString & "%'"
             connProduct = New SqlConnection(strConn)
             cmdProduct = New SqlCommand(strSQL, connProduct)
             connProduct.Open()
             drProduct = cmdProduct.ExecuteReader(CommandBehavior.CloseConnection)
 
-            'loop through all Product elements
+            'loop through all Product elements *TESTING*
             'While drProduct.Read()
             '    Response.Write("ProductID: " + CStr(drProduct.Item("ProductID")) + "<br/>")
             '    Response.Write("ProductName: " + CStr(drProduct.Item("ProductName")) + "<br/>")
             '    Response.Write("ProductNo: " + CStr(drProduct.Item("ProductNo")) + "<br/>")
             'End While
 
-            'Dim strRedirect As String
-            'strRedirect = "ProductDetail.aspx?ProductID=" + strSearchString
-            'Response.Redirect(strRedirect)
 
+            'PROFESSOR ADVICE:
             'compare user search string to every ProductNo in the Product table
             'if DIRECT match is found, then redirect user to corresponding ProductDetail page
             'else redirect user to Category.aspx
 
-            'REDIRECTS USER TO ProductDetail.aspx FOR A PRODUCT IF USER INPUTS EXACT ProductNo
             Dim strRedirect As String
-            While drProduct.Read()
-                Dim currProductNo = Trim(CStr(drProduct.Item("ProductNo")))
 
-                If strSearchString.Equals(currProductNo) Then
-                    strRedirect = "ProductDetail.aspx?ProductID=" + CStr(drProduct.Item("ProductID"))
-                    Response.Redirect(strRedirect)
+            'IF SEARCH RESULTS ARE NOT FOUND, NOTHING TO READ
+            If Not drProduct.HasRows() Then
+                Response.Write("Not Found")
+            End If
+            'OTHERWISE READ ALL OF THE DATA FROM THE SELECT QUERY
+            While drProduct.Read()
+                    Dim currProductNo = Trim(CStr(drProduct.Item("ProductNo")))
+
+                    'REDIRECT USER TO ProductDetail.aspx IF USER INPUTS EXACT ProductNo
+                    If strSearchString.Equals(currProductNo) Then
+                        strRedirect = "ProductDetail.aspx?ProductID=" + CStr(drProduct.Item("ProductID"))
+                        Response.Redirect(strRedirect)
+                    Else
+                    'OTHERWISE LIST PRODUCTS RELEVANT TO SEARCHSTRING
+                    Response.Write("ProductNo: " + CStr(drProduct.Item("ProductNo")) + "<br/>")
                 End If
 
             End While
-            strRedirect = "Category.aspx"
-            Response.Redirect(strRedirect)
 
 
+            'PROFESSOR ADVICE:
             '    SQL statement: Select * from Product Where ProductNo = ...
             '    If yes, redirect to ProductDetail.aspx
             '       Get the ProductID from the datareader above
