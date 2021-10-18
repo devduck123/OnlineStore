@@ -44,7 +44,7 @@ Public Class Template
             Dim cmdProduct As SqlCommand
             Dim drProduct As SqlDataReader
             'Dim strSQL As String = "SELECT * FROM [Product]"
-            Dim strSQL As String = "SELECT * FROM [Product] WHERE ProductNo LIKE '" & strSearchString & "%'"
+            Dim strSQL As String = "SELECT * FROM [Product] WHERE ProductNo LIKE '" & strSearchString & "%' OR ProductName LIKE '%" & strSearchString & "%'"
             connProduct = New SqlConnection(strConn)
             cmdProduct = New SqlCommand(strSQL, connProduct)
             connProduct.Open()
@@ -79,6 +79,7 @@ Public Class Template
                         Response.Redirect(strRedirect)
                     Else
                     'OTHERWISE LIST PRODUCTS RELEVANT TO SEARCHSTRING
+                    Response.Write("ProductName: " + CStr(drProduct.Item("ProductName")) + "<br/>")
                     Response.Write("ProductNo: " + CStr(drProduct.Item("ProductNo")) + "<br/>")
                 End If
 
