@@ -255,10 +255,10 @@
     <Content Include="css\theme-shop.css" />
     <Content Include="css\theme.css" />
     <Content Include="Global.asax" />
-    <Content Include="img\1.jpg" />
-    <Content Include="img\2.jpg" />
-    <Content Include="img\3.jpg" />
-    <Content Include="img\4.jpg" />
+    <Content Include="img\DT001.jpg" />
+    <Content Include="img\DT002.jpg" />
+    <Content Include="img\DT003.jpg" />
+    <Content Include="img\DT004.jpg" />
     <Content Include="img\admin-banner.png" />
     <Content Include="img\apple-touch-icon.png" />
     <Content Include="img\arrows-dark.png" />

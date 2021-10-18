@@ -53,7 +53,7 @@
                                                         <img
                                                             alt=""
                                                             class="img-fluid"
-                                                            src="img/<%# Eval("ProductID") %>.jpg"
+                                                            src="img/<%# Trim(Eval("ProductNo")) %>.jpg"
                                                             
                                                             />
                                                     </div>
