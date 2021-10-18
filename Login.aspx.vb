@@ -20,8 +20,8 @@ Public Class Login
             drCustomer = cmdCustomer.ExecuteReader(CommandBehavior.CloseConnection)
             If drCustomer.Read() Then
                 Session("Email") = drCustomer.Item("Email")
-                lblMessage.Text = "Login succeeded."
-                'Response.Redirect("Default.aspx")
+                'lblMessage.Text = "Login succeeded."
+                Response.Redirect("Category.aspx")
             Else
                 lblMessage.Text = "Login failed."
             End If

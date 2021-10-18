@@ -8,7 +8,7 @@ Public Class Template
             hlLogin.Visible = False
             hlLogout.Visible = True
             hrefCustomer.Visible = True
-            hrefCustomer.InnerText = Session("Email")
+            hrefCustomer.InnerHtml = Session("Email")
         End If
 
         Dim connMainCategory As SqlConnection

@@ -91,7 +91,7 @@
                                                         <ul class="dropdown-menu">
                                                             <li><asp:HyperLink ID="hlLogin" runat="server" NavigateUrl="Login.aspx" CssClass="dropdown-item">Login</asp:HyperLink></li>
                                                             <li><asp:HyperLink ID="hlLogout" runat="server" NavigateUrl="Logout.aspx" CssClass="dropdown-item" Visible="false">Logout</asp:HyperLink></li>
-                                                            <li><a href="" id="hrefCustomer" runat="server" Visible="false"></a></li>
+                                                            <li><a class="dropdown-item" href="#" id="hrefCustomer" runat="server" Visible="false"></a></li>
                                                             <%--<li><a class="dropdown-item" href="shop-login.html">Login</a></li>--%>
                                                             <li><a class="dropdown-item" href="shop-cart.html">Cart</a></li>
                                                             <!-- .NET to Repeat Products -->
