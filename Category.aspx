@@ -35,7 +35,7 @@
                             <asp:Repeater ID="rpProductList" runat="server" DataSourceID="sqlDSProductList">
                                 <ItemTemplate>
                                     <!-- ===== PRODUCT ===== -->
-                                    <div class="col-sm-6 col-lg-4">
+                                    <div class="col-sm-6 col-lg-4" style="margin-bottom:8%;">
                                         <div class="product mb-0">
                                             <div class="product-thumb-info border-0 mb-3">
                                                 <div class="addtocart-btn-wrapper">
@@ -64,7 +64,7 @@
                                                     <h3
                                                         class="
                               text-3-5
-                              font-weight-medium font-alternative
+                              font-weight-bold font-alternative
                               text-transform-none
                               line-height-3
                               mb-0
@@ -75,16 +75,8 @@
                                                             class="text-color-dark text-color-hover-primary"><%# Eval("ProductName") %></a>
                                                     </h3>
                                                 </div>
-                                                <a
-                                                    href="#"
-                                                    class="
-                            text-decoration-none
-                            text-color-default
-                            text-color-hover-dark
-                            text-4
-                          "><i class="far fa-heart"></i></a>
                                             </div>
-                                            <div title="Rated 5 out of 5">
+<%--                                            <div title="Rated 5 out of 5">
                                                 <input
                                                     type="text"
                                                     class="d-none"
@@ -92,11 +84,13 @@
                                                     title=""
                                                     data-plugin-star-rating
                                                     data-plugin-options="{'displayOnly': true, 'color': 'default', 'size':'xs'}" />
-                                            </div>
+                                            </div>--%>
+
                                             <!-- PRODUCT PRICE -->
-                                            <p class="price text-5 mb-3">
-                                                <span class="amount text-color-dark font-weight-semi-bold">$ <%# Eval("ProductPrice") %></span>
+                                            <p class="price text-4 mb-0">
+                                                <span ID="lblDiscountPrice" runat="server" class="amount text-color-dark">$<%# Format(discountIfMember(Eval("ProductPrice")), "N2") %></span>
                                             </p>
+
                                         </div>
                                     </div>
                                 </ItemTemplate>
