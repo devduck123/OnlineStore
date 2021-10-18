@@ -15,7 +15,7 @@
                         <span class="form-label text-color-dark text-3">Password:</span><br />
                         <asp:TextBox ID="tbPassword" Width="200" runat="server"></asp:TextBox><br />
                         <br />
-                        <asp:Button ID="btnLogin" runat="server" Text="SUBMIT" CssClass="btn btn-dark btn-modern font-weight-bold" /><br />
+                        <asp:Button ID="btnLogin" runat="server" Text="LOGIN" CssClass="btn btn-dark btn-modern font-weight-bold" /><br />
                         <br />
                         <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
 
@@ -34,7 +34,7 @@
                         <span class="form-label text-color-dark text-3">Password:</span><br />
                         <asp:TextBox ID="TextBox2" Width="200" runat="server"></asp:TextBox><br />
                         <br />
-                        <asp:Button ID="Button1" runat="server" Text="SUBMIT" CssClass="btn btn-dark btn-modern font-weight-bold" /><br />
+                        <asp:Button ID="Button1" runat="server" Text="REGISTER" CssClass="btn btn-dark btn-modern font-weight-bold" /><br />
                         <br />
                         <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
 

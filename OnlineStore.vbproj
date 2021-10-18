@@ -2230,6 +2230,7 @@
     <Content Include="js\views\view.contact.js" />
     <Content Include="js\views\view.home.js" />
     <Content Include="js\views\view.shop.js" />
+    <Content Include="Logout.aspx" />
     <Content Include="master\less\less.js" />
     <Content Include="master\rtl\css\demos\rtl-demo-architecture-2.css" />
     <Content Include="master\rtl\css\demos\rtl-demo-architecture-interior.css" />
@@ -5510,6 +5511,13 @@
     </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.vb">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.vb">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

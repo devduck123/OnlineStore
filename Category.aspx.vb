@@ -18,14 +18,6 @@ Public Class Category
             sqlDSProductList.SelectCommand = "SELECT * FROM [Product] WHERE SubCategoryID = " & CInt(Request.QueryString("SubCategoryID"))
         End If
 
-
-
-        '20% off price if logged in
-        'If Session("Email") <> "" Then
-        'Dim discPrice = CDbl(drProduct.Item("ProductPrice")) - (CDbl(drProduct.Item("ProductPrice")) * 0.2)
-        'lblDiscountPrice.Text = Format(discPrice, "N2")
-        'End If
-
     End Sub
 
     Function discountIfMember(ByVal price As Double)
