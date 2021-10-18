@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class ProductDetail
 
     '''<summary>
+    '''lblProductImage control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblProductImage As Global.System.Web.UI.HtmlControls.HtmlImage
+
+    '''<summary>
     '''lblProductName control.
     '''</summary>
     '''<remarks>

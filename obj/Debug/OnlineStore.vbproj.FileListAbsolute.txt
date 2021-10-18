@@ -116,7 +116,6 @@ C:\Users\tommy\Desktop\CIS4250\OnlineStore\bin\roslyn\VBCSCompiler.exe
 C:\Users\tommy\Desktop\CIS4250\OnlineStore\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\tommy\Desktop\CIS4250\OnlineStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\tommy\Desktop\CIS4250\OnlineStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\tommy\Desktop\CIS4250\OnlineStore\obj\Debug\OnlineStore.vbproj.AssemblyReference.cache
 C:\Users\tommy\Desktop\CIS4250\OnlineStore\obj\Debug\OnlineStore.Resources.resources
 C:\Users\tommy\Desktop\CIS4250\OnlineStore\obj\Debug\OnlineStore.vbproj.GenerateResource.cache
 C:\Users\tommy\Desktop\CIS4250\OnlineStore\obj\Debug\OnlineStore.vbproj.CoreCompileInputs.cache
@@ -124,3 +123,4 @@ C:\Users\tommy\Desktop\CIS4250\OnlineStore\obj\Debug\OnlineStore.vbproj.CopyComp
 C:\Users\tommy\Desktop\CIS4250\OnlineStore\obj\Debug\OnlineStore.dll
 C:\Users\tommy\Desktop\CIS4250\OnlineStore\obj\Debug\OnlineStore.xml
 C:\Users\tommy\Desktop\CIS4250\OnlineStore\obj\Debug\OnlineStore.pdb
+C:\Users\tommy\Desktop\CIS4250\OnlineStore\obj\Debug\OnlineStore.vbproj.AssemblyReference.cache

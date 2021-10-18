@@ -18,6 +18,8 @@ Public Class ProductDetail
                 lblProductName.Text = drProduct.Item("ProductName")
                 lblProductNo.Text = drProduct.Item("ProductNo")
                 lblProductPrice.Text = drProduct.Item("ProductPrice")
+                lblProductImage.Src = "img/" & Trim(drProduct.Item("ProductNo")) & ".jpg"
+
                 ' bonus: display rating images based on the rating value from the rating data field
 
             Else

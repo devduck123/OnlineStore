@@ -91,6 +91,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:OnlineStore.ProductDetail._lblProductImage">
+<summary>
+lblProductImage control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:OnlineStore.ProductDetail._lblProductName">
 <summary>
 lblProductName control.

@@ -12,6 +12,8 @@
                             <div class="thumb-gallery-wrapper">
                                 <div>
                                     <img
+                                        ID="lblProductImage"
+                                        runat="server"
                                         alt=""
                                         class="img-fluid"
                                         src="img/products/product-grey-7.jpg"
