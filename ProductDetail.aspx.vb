@@ -22,7 +22,13 @@ Public Class ProductDetail
                 lblProductDescription.InnerText = drProduct.Item("ProductDescription")
                 lblProductDetail.InnerText = drProduct.Item("ProductDetail")
 
-                ' bonus: display rating images based on the rating value from the rating data field
+                'bonus: display rating images based on the rating value from the rating data field
+
+                '20% off price if logged in
+                If Session("Email") <> "" Then
+                    Dim discPrice = CDbl(drProduct.Item("ProductPrice")) - (CDbl(drProduct.Item("ProductPrice")) * 0.2)
+                    lblProductPrice.Text = Format(discPrice, "N2")
+                End If
 
             Else
 
