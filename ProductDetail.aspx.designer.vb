@@ -32,15 +32,6 @@ Partial Public Class ProductDetail
     Protected WithEvents lblProductName As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''star control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents star As Global.System.Web.UI.WebControls.Image
-
-    '''<summary>
     '''lblProductPrice control.
     '''</summary>
     '''<remarks>
@@ -50,6 +41,15 @@ Partial Public Class ProductDetail
     Protected WithEvents lblProductPrice As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''lblProductDescription control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblProductDescription As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
     '''lblProductNo control.
     '''</summary>
     '''<remarks>
@@ -57,4 +57,13 @@ Partial Public Class ProductDetail
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblProductNo As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''lblProductDetail control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblProductDetail As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 End Class

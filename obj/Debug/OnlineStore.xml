@@ -109,15 +109,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:OnlineStore.ProductDetail._star">
-<summary>
-star control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:OnlineStore.ProductDetail._lblProductPrice">
 <summary>
 lblProductPrice control.
@@ -127,9 +118,27 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:OnlineStore.ProductDetail._lblProductDescription">
+<summary>
+lblProductDescription control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:OnlineStore.ProductDetail._lblProductNo">
 <summary>
 lblProductNo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OnlineStore.ProductDetail._lblProductDetail">
+<summary>
+lblProductDetail control.
 </summary>
 <remarks>
 Auto-generated field.

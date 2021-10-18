@@ -26,16 +26,12 @@
                             <h1 class="mb-0 font-weight-bold text-7"><asp:Label runat="server" Text="" ID="lblProductName"></asp:Label></h1>
 
                             <div class="pb-0 clearfix d-flex align-items-center">
-                                <div title="Rated 3 out of 5" class="float-start">
-                                    <input
-                                        type="text"
-                                        class="opacity-0"
-                                        value="3"
-                                        title=""
-                                        data-plugin-star-rating
-                                        data-plugin-options="{'displayOnly': true, 'color': 'primary', 'size':'xs'}" />
-                                    
-                                    <asp:Image ID="star" runat="server" ImageUrl="img/icons/star.png" />
+                                <div title="Rated 4 out of 5" class="float-start">                                    
+                                    <%--<asp:Image ID="star" runat="server" ImageUrl="img/icons/star.png" />--%>
+                                    <img src="img/icons/star.png" />
+                                    <img src="img/icons/star.png" />
+                                    <img src="img/icons/star.png" />
+                                    <img src="img/icons/star.png" />
                                 </div>
 
                                 <div class="review-num">
@@ -62,10 +58,9 @@
                                 <span class="amount text-color-dark">$<asp:Label runat="server" Text="" ID="lblProductPrice"></asp:Label></span>
                             </p>
 
-                            <p class="text-3-5 mb-3">
+                            <p class="text-3-5 mb-3" ID="lblProductDescription" runat="server">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sed tempus nibh sed elimttis adipiscing. Fusce in
-                      hendrerit purus. Lorem ipsum dolor sit amet.
+                                Sed tempus nibh sed elimttis adipiscing.
                             </p>
 
                             <ul class="list list-unstyled text-2">
@@ -229,19 +224,6 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <a
-                                    href="#"
-                                    class="
-                          d-flex
-                          align-items-center
-                          text-decoration-none
-                          text-color-dark
-                          text-color-hover-primary
-                          font-weight-semibold
-                          text-2
-                        ">
-                                    <i class="far fa-heart me-1"></i>SAVE TO WISHLIST
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -290,15 +272,7 @@
                                 <div
                                     class="tab-pane px-0 py-3 active"
                                     id="productDescription">
-                                    <p>
-                                        Vestibulum ante ipsum primis in faucibus orci luctus
-                          et ultrices posuere cubilia Curae; Lorem ipsum dolor
-                          sit amet, consectetur adipiscing elit. Fusce sagittis,
-                          massa fringilla consequat blandit, mauris ligula porta
-                          nisi, non tristique enim sapien vel nisl. Suspendisse
-                          vestibulum lobortis dapibus.
-                                    </p>
-                                    <p class="m-0">
+                                    <p class="m-0" ID="lblProductDetail" runat="server">
                                         Vestibulum ante ipsum primis in faucibus orci luctus
                           et ultrices posuere cubilia Curae; Lorem ipsum dolor
                           sit amet, consectetur adipiscing elit. Fusce sagittis,

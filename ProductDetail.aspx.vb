@@ -19,6 +19,8 @@ Public Class ProductDetail
                 lblProductNo.Text = drProduct.Item("ProductNo")
                 lblProductPrice.Text = drProduct.Item("ProductPrice")
                 lblProductImage.Src = "img/" & Trim(drProduct.Item("ProductNo")) & ".jpg"
+                lblProductDescription.InnerText = drProduct.Item("ProductDescription")
+                lblProductDetail.InnerText = drProduct.Item("ProductDetail")
 
                 ' bonus: display rating images based on the rating value from the rating data field
 
@@ -27,9 +29,6 @@ Public Class ProductDetail
             End If
         End If
 
-        '        For i As Integer = 0 To 10
-        '           TODO:       retrieve N, so that we know how many times to display a star
-        '        Next
     End Sub
 
 End Class
