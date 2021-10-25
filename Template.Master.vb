@@ -77,8 +77,17 @@ Public Class Template
 
             'IF SEARCH RESULTS ARE NOT FOUND, NOTHING TO READ
             If Not drProduct.HasRows() Then
-                'TODO: REDIRECT TO CATEGORY.ASPX
-                Response.Write("Not Found")
+                'TODO: REDIRECT
+                'check if currUrl is already a querystring
+                If currUrl.Contains("?") Then
+                    'if true, then add "NOTFOUND" to the querystring link
+                    strRedirect = currUrl + "&Search=" + "NOTFOUND"
+                Else
+                    'if false, then turn link into querystring and "NOTFOUND"
+                    strRedirect = currUrl + "?Search=" + "NOTFOUND"
+                End If
+                Response.Redirect(strRedirect)
+                'Response.Write("Not Found")
             End If
             'OTHERWISE READ ALL OF THE DATA FROM THE SELECT QUERY
             While drProduct.Read()
