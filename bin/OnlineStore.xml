@@ -37,6 +37,42 @@ OnlineStore
  Returns the Asp log object.
  </summary>
 </member>
+<member name="F:OnlineStore.Category._lblSearch">
+<summary>
+lblSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OnlineStore.Category._sqlDSSearch">
+<summary>
+sqlDSSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OnlineStore.Category._rpSearch">
+<summary>
+rpSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OnlineStore.Category._divider">
+<summary>
+divider control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:OnlineStore.Category._lblMainCategoryName">
 <summary>
 lblMainCategoryName control.

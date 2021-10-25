@@ -5,6 +5,7 @@ Public Class Category
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+
         If Request.QueryString("MainCategoryID") <> "" Then
             lblMainCategoryName.Text = Request.QueryString("MainCategoryName")
             sqlDSSubCategory.SelectCommand = "SELECT * FROM [Category] WHERE Parent = " & CInt(Request.QueryString("MainCategoryID"))
@@ -16,6 +17,12 @@ Public Class Category
         If Request.QueryString("SubCategoryID") <> "" Then
             lblProductListType.Text = "All Products for " + Request.QueryString("SubCategoryName")
             sqlDSProductList.SelectCommand = "SELECT * FROM [Product] WHERE SubCategoryID = " & CInt(Request.QueryString("SubCategoryID"))
+        End If
+
+        If Request.QueryString("Search") <> "" Then
+            lblSearch.InnerText = "Search results for " & Request.QueryString("Search")
+            sqlDSSearch.SelectCommand = "SELECT * FROM [Product] WHERE ProductNo LIKE '" & Request.QueryString("Search") & "%' OR ProductName LIKE '%" & Request.QueryString("Search") & "%'"
+            divider.Visible = True
         End If
 
     End Sub

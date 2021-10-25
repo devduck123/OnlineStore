@@ -14,6 +14,42 @@ Option Explicit On
 Partial Public Class Category
 
     '''<summary>
+    '''lblSearch control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblSearch As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''sqlDSSearch control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents sqlDSSearch As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''rpSearch control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents rpSearch As Global.System.Web.UI.WebControls.Repeater
+
+    '''<summary>
+    '''divider control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents divider As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
     '''lblMainCategoryName control.
     '''</summary>
     '''<remarks>

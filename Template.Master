@@ -140,16 +140,6 @@
                                         <div class="header-nav-feature header-nav-features-search d-inline-flex">
                                             <a href="#" class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch"><i class="fas fa-search header-nav-top-icon"></i></a>
                                             <div class="header-nav-features-dropdown" id="headerTopSearchDropdown">
-                                                <!-- GET RID OF THIS FORM, WE'LL PROGRAM OUR OWN -->
-                                    <%--            <form role="search" action="page-search-results.html" method="get">
-                                                    <div class="simple-search input-group">
-                                                        <input class="form-control text-1" id="headerSearch" name="q" type="search" value="" placeholder="Search...">
-                                                        <button class="btn" type="submit">
-                                                            <i class="fas fa-search header-nav-top-icon"></i>
-                                                        </button>
-                                                    </div>
-                                                </form>--%>
-
                                                 <div class="simple-search input-group">
                                                     <asp:TextBox ID="tbSearchString" runat="server"></asp:TextBox>
                                                     <asp:Button ID="btnSearch" runat="server" Text="Go" />
