@@ -154,6 +154,42 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:OnlineStore.ProductDetail._lblSearch">
+<summary>
+lblSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OnlineStore.ProductDetail._sqlDSSearch">
+<summary>
+sqlDSSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OnlineStore.ProductDetail._rpSearch">
+<summary>
+rpSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OnlineStore.ProductDetail._divider">
+<summary>
+divider control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:OnlineStore.ProductDetail._lblProductImage">
 <summary>
 lblProductImage control.
@@ -193,6 +229,24 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:OnlineStore.ProductDetail._lblProductNo">
 <summary>
 lblProductNo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OnlineStore.ProductDetail._tbQuantity">
+<summary>
+tbQuantity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OnlineStore.ProductDetail._btnAddToCart">
+<summary>
+btnAddToCart control.
 </summary>
 <remarks>
 Auto-generated field.

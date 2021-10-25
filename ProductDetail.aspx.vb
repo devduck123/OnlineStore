@@ -35,6 +35,23 @@ Public Class ProductDetail
             End If
         End If
 
+        If Request.QueryString("Search") <> "" Then
+            If Request.QueryString("Search").Equals("NOTFOUND") Then
+                lblSearch.InnerText = "Search results were not found"
+                divider.Visible = True
+            Else
+                lblSearch.InnerText = "Search results for " & Request.QueryString("Search")
+                sqlDSSearch.SelectCommand = "SELECT * FROM [Product] WHERE ProductNo LIKE '" & Request.QueryString("Search") & "%' OR ProductName LIKE '%" & Request.QueryString("Search") & "%'"
+                divider.Visible = True
+            End If
+        End If
+
     End Sub
 
+    Function discountIfMember(ByVal price As Double)
+        If Session("Email") <> "" Then
+            Return price - price * 0.2
+        End If
+        Return price
+    End Function
 End Class
