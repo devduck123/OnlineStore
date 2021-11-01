@@ -32,7 +32,7 @@
 
     <!-- version2 (HTML template) -->
     <div style="float: right; margin: 0 30px 5px 0;">
-        <asp:Button ID="btnEmptyCart" runat="server" Text="Empty the Cart" />
+        <asp:Button ID="btnEmptyCart" runat="server" Text="Empty the Cart" CssClass="btn btn-light btn-modern text-color-dark bg-color-light-scale-2 text-color-hover-light bg-color-hover-primary text-uppercase text-3 font-weight-bold border-0 border-radius-0 btn-px-4 py-3" />
     </div>   
     <asp:SqlDataSource ID="sqlDSCart1" runat="server" 
             ConnectionString="<%$ ConnectionStrings:ConnectionStringOnlineStore %>"> 
@@ -45,14 +45,14 @@
                 <asp:Label ID="lblPage" runat="server" Text="" Font-Size="14px"></asp:Label>
             </div><br />
             <div class="table-responsive cart_info">
-				<table class="table table-condensed">
+				<table class="shop_table cart">
 					<thead>
-						<tr class="cart_menu" style="background-color: orangered;">
-							<td class="image">Item</td>
-							<td class="description"></td>
-							<td class="price">Price</td>
-							<td class="quantity">Quantity</td>
-							<td class="total">Total</td>
+						<tr class="cart_menu" style="background-color: orange;">
+							<td class="product-thumbnail">Item</td>
+							<td class="product-name">Description</td>
+							<td class="product-price">Price</td>
+							<td class="product-quantity">Quantity</td>
+							<td class="product-subtotal">Total</td>
 							<td></td>
 						</tr>
 					</thead>
@@ -63,30 +63,30 @@
             </div>
         </LayoutTemplate>
         <ItemTemplate>
-            <tr>
-				<td class="cart_product">
+            <tr class="cart_table_item">
+				<td class="product-thumbnail">
                     <!-- TO LINK TO PRODUCTDETAIL PAGE, PRODUCTID MUST BE ADDED TO THE CART TABLE IN DB -->
                     <%--<a href="ProductDetail.aspx?ProductID=<%# Eval("ProductID") %>"><img src="img/<%# Trim(Eval("ProductNo")) %>.jpg" alt="" width="320" height="180"></a>--%>
 					<a href=""><img src="img/<%# Trim(Eval("ProductNo")) %>.jpg" alt="" width="320" height="180"></a>
 				</td>
-				<td class="cart_description">
+				<td class="product-name">
 					<h4><a href=""><%# Trim(Eval("ProductName")) %></a></h4>
 					<p>Product Number: <%# Eval("ProductNo") %></p>
 				</td>
-				<td class="cart_price">
+				<td class="product-price">
 					<p>$<%# Eval("ProductPrice") %></p>
 				</td>
-				<td class="cart_quantity">
+				<td class="product-quantity">
                     <asp:TextBox ID="tbQuantity" Text='<%# Eval("Quantity")%>' Width="50px" CssClass="" runat="server"></asp:TextBox>
                     <asp:LinkButton runat="server" ID="lbUpdate" Text='Update'
-                        CommandName="cmdUpdate" CommandArgument='<%# Eval("ProductNo")%>' />
+                        CommandName="cmdUpdate" CommandArgument='<%# Eval("ProductNo")%>' CssClass="btn btn-light btn-modern text-color-dark bg-color-light-scale-2 text-color-hover-light bg-color-hover-primary text-uppercase text-3 font-weight-bold border-0 border-radius-0 btn-px-4 py-3" />
                     <asp:LinkButton runat="server" ID="lbDelete" Text='Delete'
-                        CommandName="cmdDelete" CommandArgument='<%# Eval("ProductNo")%>' />
+                        CommandName="cmdDelete" CommandArgument='<%# Eval("ProductNo")%>' CssClass="btn btn-light btn-modern text-color-dark bg-color-light-scale-2 text-color-hover-light bg-color-hover-primary text-uppercase text-3 font-weight-bold border-0 border-radius-0 btn-px-4 py-3" />
 				</td>
-				<td class="cart_total">
-					<p class="cart_total_price">$</p>
+				<td class="product-subtotal">
+					<p class="amount text-color-dark font-weight-bold text-4">$</p>
 				</td>
-				<td class="cart_delete">
+				<td class="product-thumbnail-remove">
 					
 				</td>
             </tr> 
