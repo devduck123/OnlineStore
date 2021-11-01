@@ -48,10 +48,71 @@ Public Class ProductDetail
 
     End Sub
 
+    Private Sub btnAddToCart_Click(sender As Object, e As EventArgs) Handles btnAddToCart.Click
+        '*** get CartNo
+        Dim strCartNo As String
+        If HttpContext.Current.Request.Cookies("CartNo") Is Nothing Then
+            strCartNo = GetRandomCartNoUsingGUID(10)
+            Dim CookieTo As New HttpCookie("CartNo", strCartNo)
+            HttpContext.Current.Response.AppendCookie(CookieTo)
+        Else
+            Dim CookieBack As HttpCookie
+            CookieBack = HttpContext.Current.Request.Cookies("CartNo")
+            strCartNo = CookieBack.Value
+        End If
+        ' set up ado objects and variables
+        Dim strConnectionString As String = System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionStringOnlineStore").ConnectionString
+        Dim conn As New SqlConnection(strConnectionString)
+        Dim drCheck As SqlDataReader
+        Dim strSQLStatement As String
+        Dim cmdSQL As SqlCommand
+        ' get product price
+        strSQLStatement = "SELECT * FROM [Product] Where ProductNo = '" & Trim(lblProductNo.Text) & "'"
+        cmdSQL = New SqlCommand(strSQLStatement, conn)
+        'Response.Write(strSQLStatement)
+        conn.Open()
+        drCheck = cmdSQL.ExecuteReader()
+        Dim decPrice As Decimal
+        If drCheck.Read() Then
+            decPrice = drCheck.Item("ProductPrice")
+        End If
+        drCheck.Close()
+        ' check if this product already exits in the cart
+        strSQLStatement = "SELECT * FROM [Cart] WHERE CartNo = '" & strCartNo & "' AND ProductNo = '" & Trim(lblProductNo.Text) & "'"
+        'Response.Write(strSQLStatement)
+        cmdSQL.CommandText = strSQLStatement
+        drCheck = cmdSQL.ExecuteReader()
+        If drCheck.Read() Then
+            ' your work
+            ' what work???
+        Else
+            strSQLStatement = "INSERT INTO [Cart] (CartNo, ProductNo, ProductName, Quantity, ProductPrice) VALUES ('" & strCartNo & "', '" & lblProductNo.Text & "', '" & lblProductName.Text & "', " & CInt(tbQuantity.Text) & ", " & decPrice & ")"
+        End If
+        'Response.Write(strSQLStatement)
+        drCheck.Close() ' When a DataReader is open, its Connection is dedicated to the its associated SQLcommand.
+        cmdSQL.CommandText = strSQLStatement
+        Dim drCart As SqlDataReader
+        drCart = cmdSQL.ExecuteReader(CommandBehavior.CloseConnection)
+        Response.Redirect("ViewCart.aspx")
+    End Sub
+
     Function discountIfMember(ByVal price As Double)
         If Session("Email") <> "" Then
             Return price - price * 0.2
         End If
         Return price
+    End Function
+
+    Public Function GetRandomCartNoUsingGUID(ByVal length As Integer) As String
+        'Get the GUID
+        Dim guidResult As String = System.Guid.NewGuid().ToString()
+        'Remove the hyphens
+        guidResult = guidResult.Replace("-", String.Empty)
+        'Make sure length is valid
+        If length <= 0 OrElse length > guidResult.Length Then
+            Throw New ArgumentException("Length must be between 1 and " & guidResult.Length)
+        End If
+        'Return the first length bytes
+        Return guidResult.Substring(0, length)
     End Function
 End Class
