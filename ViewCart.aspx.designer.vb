@@ -39,4 +39,13 @@ Partial Public Class ViewCart
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lvCart As Global.System.Web.UI.WebControls.ListView
+
+    '''<summary>
+    '''subtotal control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents subtotal As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 End Class

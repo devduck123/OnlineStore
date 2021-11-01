@@ -2,6 +2,7 @@
 Imports System.Data.SqlClient
 Public Class ViewCart
     Inherits System.Web.UI.Page
+    Public counter As String
     Public strCartNo As String = " "
     Dim CookieBack As HttpCookie = HttpContext.Current.Request.Cookies("CartNo")
     Public strConn As String = System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionStringOnlineStore").ConnectionString
@@ -13,6 +14,7 @@ Public Class ViewCart
             strCartNo = CookieBack.Value
         End If
         sqlDSCart1.SelectCommand = "SELECT * FROM [Cart] Where CartNo = '" & strCartNo & "'"
+
     End Sub
 
     Protected Sub lvCart_OnItemCommand(ByVal sender As Object, ByVal e As ListViewCommandEventArgs)
@@ -20,8 +22,8 @@ Public Class ViewCart
             ' get productno and quantity
             Dim strProductNo As String = e.CommandArgument
             Dim tbQuantity As TextBox = CType(e.Item.FindControl("tbQuantity"), TextBox)
-            Dim strSQL As String = "Update Cart set Quantity = '" & CInt(tbQuantity.Text) & "' where ProductNo = '" & strProductNo & "' and CartNo = '" & strCartNo & "'"
-            ' update
+            Dim strSQL As String = "UPDATE [Cart] SET Quantity = '" & CInt(tbQuantity.Text) & "' where ProductNo = '" & strProductNo & "' and CartNo = '" & strCartNo & "'"
+            'update
             Dim connCart As SqlConnection
             Dim cmdCart As SqlCommand
             Dim drCart As SqlDataReader

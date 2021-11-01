@@ -235,9 +235,27 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:OnlineStore.ProductDetail._btnDecrease">
+<summary>
+btnDecrease control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:OnlineStore.ProductDetail._tbQuantity">
 <summary>
 tbQuantity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OnlineStore.ProductDetail._btnIncrease">
+<summary>
+btnIncrease control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -499,6 +517,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:OnlineStore.ViewCart._lvCart">
 <summary>
 lvCart control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OnlineStore.ViewCart._subtotal">
+<summary>
+subtotal control.
 </summary>
 <remarks>
 Auto-generated field.

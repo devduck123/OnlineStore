@@ -213,17 +213,19 @@
                                 <!-- SHOPPING CART INCREASE/DECREASE -->
                                 <div class="quantity quantity-lg">
                                     <!-- DECREASE -->
-                                    <input
-                                        type="button"
-                                        class="
+                                    <asp:Button
+                                        UseSubmitBehavior="false"
+                                        cssClass="
                             minus
                             text-color-hover-light
                             bg-color-hover-primary
                             border-color-hover-primary
                           "
-                                        value="-" />
+                                        Text="-"
+                                        ID="btnDecrease"
+                                        runat="server" />
 
-                                    <asp:TextBox ID="tbQuantity" runat="server" CssClass="input-text qty text">
+                                    <asp:TextBox ID="tbQuantity" runat="server" CssClass="input-text qty text" Text="0">
                                         
                                     </asp:TextBox>
                                     <%--<input
@@ -236,15 +238,17 @@
                                         step="1" />--%>
 
                                     <!-- INCREASE -->
-                                    <input
-                                        type="button"
-                                        class="
+                                    <asp:Button
+                                        UseSubmitBehavior="false"
+                                        cssClass="
                             plus
                             text-color-hover-light
                             bg-color-hover-primary
                             border-color-hover-primary
                           "
-                                        value="+" />
+                                        Text="+"
+                                        ID="btnIncrease"
+                                        runat="server" />
                                 </div>
 
                                 <!-- SHOPPING CART SUBMIT BUTTON -->

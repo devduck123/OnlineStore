@@ -95,6 +95,15 @@ Partial Public Class ProductDetail
     Protected WithEvents lblProductNo As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''btnDecrease control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnDecrease As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''tbQuantity control.
     '''</summary>
     '''<remarks>
@@ -102,6 +111,15 @@ Partial Public Class ProductDetail
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents tbQuantity As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''btnIncrease control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnIncrease As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''btnAddToCart control.

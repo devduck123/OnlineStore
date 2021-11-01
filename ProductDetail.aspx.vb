@@ -48,6 +48,24 @@ Public Class ProductDetail
 
     End Sub
 
+    Private Sub btnIncrease_Click(sender As Object, e As EventArgs) Handles btnIncrease.Click
+        If tbQuantity.Text <> "" Then
+            tbQuantity.Text = CStr(CInt(tbQuantity.Text) + 1)
+        Else
+            tbQuantity.Text = CStr(1)
+        End If
+    End Sub
+
+    Private Sub btnDecrease_Click(sender As Object, e As EventArgs) Handles btnDecrease.Click
+        If tbQuantity.Text <> "" Then
+            If CInt(tbQuantity.Text) > 0 Then
+                tbQuantity.Text = CStr(CInt(tbQuantity.Text) - 1)
+            End If
+        Else
+            tbQuantity.Text = CStr(0)
+        End If
+    End Sub
+
     Private Sub btnAddToCart_Click(sender As Object, e As EventArgs) Handles btnAddToCart.Click
         '*** get CartNo
         Dim strCartNo As String
@@ -84,7 +102,8 @@ Public Class ProductDetail
         drCheck = cmdSQL.ExecuteReader()
         If drCheck.Read() Then
             ' your work
-            ' what work???
+            Dim updatedQuantity As Integer = CInt(drCheck.Item("Quantity")) + CInt(tbQuantity.Text)
+            strSQLStatement = "UPDATE [Cart] SET Quantity = '" & updatedQuantity & "' where ProductNo = '" & lblProductNo.Text & "' and CartNo = '" & strCartNo & "'"
         Else
             strSQLStatement = "INSERT INTO [Cart] (CartNo, ProductNo, ProductName, Quantity, ProductPrice) VALUES ('" & strCartNo & "', '" & lblProductNo.Text & "', '" & lblProductName.Text & "', " & CInt(tbQuantity.Text) & ", " & decPrice & ")"
         End If
