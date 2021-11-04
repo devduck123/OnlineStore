@@ -94,6 +94,22 @@
 
         </ItemTemplate>
     </asp:ListView>
+
+    <!-- DATA PAGER -->
+    <div style="padding: 8px;width: 100%;text-align: center;">
+        <div style="display: inline-block; margin-top: 5px">
+            <asp:Button runat="server" Text="&laquo;" id="show_prev" CssClass="show_prevx"></asp:Button>
+            <asp:DataPager ID="DataPager1" runat="server" PagedControlID="lvCart" PageSize="3">
+                <Fields>        
+                <asp:NumericPagerField NextPageText='&raquo;' PreviousPageText='&laquo;' ButtonCount="5" 
+                    ButtonType="Button" NextPreviousButtonCssClass="next_prevx" NumericButtonCssClass="numericx" 
+                    CurrentPageLabelCssClass="currentx" RenderNonBreakingSpacesBetweenControls="False" />
+                </Fields>
+            </asp:DataPager>
+            <asp:Button runat="server" Text="&raquo;" id="show_next" CssClass="show_nextx"></asp:Button>
+        </div>
+    </div>
+
     <!-- CART TOTAL -->
     <div class="table_responsive cart_info">
         <table class="shop_table cart-totals mb-4">

@@ -523,6 +523,33 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:OnlineStore.ViewCart._show_prev">
+<summary>
+show_prev control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OnlineStore.ViewCart._DataPager1">
+<summary>
+DataPager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:OnlineStore.ViewCart._show_next">
+<summary>
+show_next control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:OnlineStore.ViewCart._subtotal">
 <summary>
 subtotal control.
