@@ -112,6 +112,8 @@ Public Class ProductDetail
         cmdSQL.CommandText = strSQLStatement
         Dim drCart As SqlDataReader
         drCart = cmdSQL.ExecuteReader(CommandBehavior.CloseConnection)
+
+        'COMMENT OUT TO TEST
         Response.Redirect("ViewCart.aspx")
     End Sub
 

@@ -91,9 +91,7 @@
                 </td>
                 <td class="product-thumbnail-remove"></td>
             </tr>
-            <% counter = subtotal.InnerText %>
-            <% Response.Write("counter: " + counter) %>
-            
+
         </ItemTemplate>
     </asp:ListView>
     <!-- CART TOTAL -->
@@ -105,7 +103,7 @@
                         <strong class="text-color-dark text-3-5">Total</strong>
                     </td>
                     <td class="text-end">
-                        <strong class="text-color-dark"><span ID="subtotal" runat="server" class="amount text-color-dark text-5">$<%# counter %> </span></strong>
+                        <strong class="text-color-dark"><span ID="subtotal" runat="server" class="amount text-color-dark text-5">$<% calculateSubtotal() %> </span></strong>
                     </td>
                 </tr>
             </tbody>
