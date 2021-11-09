@@ -100,21 +100,26 @@ Public Class ProductDetail
         'Response.Write(strSQLStatement)
         cmdSQL.CommandText = strSQLStatement
         drCheck = cmdSQL.ExecuteReader()
-        If drCheck.Read() Then
-            ' your work
-            Dim updatedQuantity As Integer = CInt(drCheck.Item("Quantity")) + CInt(tbQuantity.Text)
-            strSQLStatement = "UPDATE [Cart] SET Quantity = '" & updatedQuantity & "' where ProductNo = '" & lblProductNo.Text & "' and CartNo = '" & strCartNo & "'"
+        If Not Integer.TryParse(tbQuantity.Text, vbNull) Then
+            Response.Write("<script language=""javascript"">alert('Please Enter a Number Value');</script>")
+        ElseIf CInt(tbQuantity.Text) < 0 Then
+            Response.Write("<script language=""javascript"">alert('Negative Values Are Not Allowed');</script>")
         Else
-            strSQLStatement = "INSERT INTO [Cart] (CartNo, ProductNo, ProductName, Quantity, ProductPrice) VALUES ('" & strCartNo & "', '" & lblProductNo.Text & "', '" & lblProductName.Text & "', " & CInt(tbQuantity.Text) & ", " & decPrice & ")"
+            If drCheck.Read() Then
+                ' your work
+                Dim updatedQuantity As Integer = CInt(drCheck.Item("Quantity")) + CInt(tbQuantity.Text)
+                strSQLStatement = "UPDATE [Cart] SET Quantity = '" & updatedQuantity & "' where ProductNo = '" & lblProductNo.Text & "' and CartNo = '" & strCartNo & "'"
+            Else
+                strSQLStatement = "INSERT INTO [Cart] (CartNo, ProductNo, ProductName, Quantity, ProductPrice) VALUES ('" & strCartNo & "', '" & lblProductNo.Text & "', '" & lblProductName.Text & "', " & CInt(tbQuantity.Text) & ", " & decPrice & ")"
+            End If
+            'Response.Write(strSQLStatement)
+            drCheck.Close() ' When a DataReader is open, its Connection is dedicated to the its associated SQLcommand.
+            cmdSQL.CommandText = strSQLStatement
+            Dim drCart As SqlDataReader
+            drCart = cmdSQL.ExecuteReader(CommandBehavior.CloseConnection)
+            'COMMENT OUT TO TEST
+            Response.Redirect("ViewCart.aspx")
         End If
-        'Response.Write(strSQLStatement)
-        drCheck.Close() ' When a DataReader is open, its Connection is dedicated to the its associated SQLcommand.
-        cmdSQL.CommandText = strSQLStatement
-        Dim drCart As SqlDataReader
-        drCart = cmdSQL.ExecuteReader(CommandBehavior.CloseConnection)
-
-        'COMMENT OUT TO TEST
-        Response.Redirect("ViewCart.aspx")
     End Sub
 
     Function discountIfMember(ByVal price As Double)

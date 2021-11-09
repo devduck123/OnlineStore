@@ -27,19 +27,26 @@ Public Class ViewCart
             ' get productno and quantity
             Dim strProductNo As String = e.CommandArgument
             Dim tbQuantity As TextBox = CType(e.Item.FindControl("tbQuantity"), TextBox)
-            Dim strSQL As String = "UPDATE [Cart] SET Quantity = '" & CInt(tbQuantity.Text) & "' where ProductNo = '" & strProductNo & "' and CartNo = '" & strCartNo & "'"
-            'update
-            'Response.Write(strSQL)
-            'Response.Write("<br /> CartNo: " + strCartNo + "<br />")
-            Dim connCart As SqlConnection
-            Dim cmdCart As SqlCommand
-            Dim drCart As SqlDataReader
-            connCart = New SqlConnection(strConn)
-            cmdCart = New SqlCommand(strSQL, connCart)
-            connCart.Open()
-            drCart = cmdCart.ExecuteReader(CommandBehavior.CloseConnection)
-            sqlDSCart1.DataBind()
-            Response.Redirect(HttpContext.Current.Request.Url.AbsoluteUri)
+            'TODO: validate input to be an Integer
+            If Not Integer.TryParse(tbQuantity.Text, vbNull) Then
+                Response.Write("<script language=""javascript"">alert('Please Enter a Number Value');</script>")
+            ElseIf CInt(tbQuantity.Text) < 0 Then
+                Response.Write("<script language=""javascript"">alert('Negative Values Are Not Allowed');</script>")
+            Else
+                Dim strSQL As String = "UPDATE [Cart] SET Quantity = '" & CInt(tbQuantity.Text) & "' where ProductNo = '" & strProductNo & "' and CartNo = '" & strCartNo & "'"
+                'update
+                'Response.Write(strSQL)
+                'Response.Write("<br /> CartNo: " + strCartNo + "<br />")
+                Dim connCart As SqlConnection
+                Dim cmdCart As SqlCommand
+                Dim drCart As SqlDataReader
+                connCart = New SqlConnection(strConn)
+                cmdCart = New SqlCommand(strSQL, connCart)
+                connCart.Open()
+                drCart = cmdCart.ExecuteReader(CommandBehavior.CloseConnection)
+                sqlDSCart1.DataBind()
+                Response.Redirect(HttpContext.Current.Request.Url.AbsoluteUri)
+            End If
         ElseIf e.CommandName = "cmdDelete" Then
             ' get productno and quantity
             Dim strProductNo As String = e.CommandArgument
