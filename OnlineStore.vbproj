@@ -2305,6 +2305,7 @@
     <Content Include="page-404.html" />
     <Content Include="page-500.html" />
     <Content Include="page-search-results.html" />
+    <Content Include="Payment.aspx" />
     <Content Include="php\contact-form-recaptcha-v2.php" />
     <Content Include="php\contact-form-recaptcha-v3.php" />
     <Content Include="php\contact-form-refresh-captcha.php" />
@@ -5538,6 +5539,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Payment.aspx.designer.vb">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.aspx.vb">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="ProductDetail.aspx.designer.vb">
       <DependentUpon>ProductDetail.aspx</DependentUpon>
